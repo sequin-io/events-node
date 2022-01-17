@@ -7,10 +7,10 @@ export interface ProcessorOptions {
   schema: string;
 }
 
-export const DEFAULT_OPTIONS: Omit<ProcessorOptions, "connection"> = {
-  groupName: "default",
-  schema: "public",
-};
+export const DEFAULT_OPTIONS: Omit<ProcessorOptions, "connection" | "schema"> =
+  {
+    groupName: "default",
+  };
 
 const EVENT_CHANNEL_NAME = "new_sync_event";
 const GET_EVENT_QUERY = `
