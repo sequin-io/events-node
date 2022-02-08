@@ -6,7 +6,7 @@ This library provides an event processor for events of syncs schemas.
 
 ## Installation
 
-We don't provide a npm package yet for this library. To install it, simply copy the folder `sequinEvents` to your working directory and import default from it.
+We don't provide a npm package yet for this library. To install it, simply copy the folder `src/sequinEvents` to your working directory and import default from it.
 
 ```tsx
 import Sequin from "./sequinEvents";
