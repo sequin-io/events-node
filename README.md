@@ -50,18 +50,7 @@ If no processor was previously instantiated for the group name, an exception wil
 To handle processed events, add a listener to the `event` channel:
 
 ```tsx
-handler.on("event", (ev: SequinEvent) => {
+handler.on("event", (ev: SequinEvent<any>) => {
   console.log(ev);
 });
-```
-
-Where `ev` is an object of type:
-
-```tsx
-interface SequinEvent {
-  id: number;
-  event_type: "insert" | "update" | "delete";
-  object_type: string;
-  payload: any;
-}
 ```
